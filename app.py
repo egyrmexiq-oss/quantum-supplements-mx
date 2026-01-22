@@ -171,7 +171,7 @@ if prompt := st.chat_input("Cuéntame cómo te sientes..."):
         full_prompt = f"Eres el Master Herbalist de Quantum Herbal (Modo: {nivel_detalle}). {INSTRUCCION_EXTRA}. Consulta del usuario: {prompt}."
         
         # OJO: Verifica si tu modelo es 'gemini-1.5-flash'. El 2.5 aún no es público estándar.
-        res = genai.GenerativeModel('gemini-1.5-pro').generate_content(full_prompt)
+        res = genai.GenerativeModel('gemini-1.5-flash').generate_content(full_prompt)
         
         st.session_state.mensajes.append({"role": "assistant", "content": res.text})
         st.rerun()
