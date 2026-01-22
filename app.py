@@ -153,7 +153,7 @@ with st.sidebar:
         else: st.info("No hay especialistas en esta zona aún.")
 
     st.markdown("---")
-    st.link_button("📝 Soy tu Asesor/a", URL_FORMULARIO)
+    st.link_button("🌿 Regístrate como Especialista, URL_FORMULARIO)
 
 # ==========================================
 # 💬 4. CHAT TERAPÉUTICO
